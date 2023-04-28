@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/christianguenter2/ABAP-Logger_dt_mirror.git#readme",
   "dependencies": {
-    "@abaplint/cli": "^2.96.0"
+    "@abaplint/cli": "^2.98.3"
   }
 }
