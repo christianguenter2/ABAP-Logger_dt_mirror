@@ -1,8 +1,8 @@
 CLASS ltd_loggable_object DEFINITION CREATE PUBLIC FOR TESTING.
 
   PUBLIC SECTION.
-    DATA messages TYPE zif_loggable_object=>tty_messages .
-    INTERFACES zif_loggable_object.
+    DATA messages TYPE zif_dt_loggable_object=>tty_messages .
+    INTERFACES zif_dt_loggable_object.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
@@ -10,7 +10,7 @@ ENDCLASS.
 
 CLASS ltd_loggable_object IMPLEMENTATION.
 
-  METHOD zif_loggable_object~get_message_table.
+  METHOD zif_dt_loggable_object~get_message_table.
     r_result = messages.
   ENDMETHOD.
 
@@ -1090,7 +1090,7 @@ CLASS lcl_test IMPLEMENTATION.
 
   METHOD can_log_loggable_object.
     "given
-    DATA loggable_message TYPE zif_loggable_object=>ty_message.
+    DATA loggable_message TYPE zif_dt_loggable_object=>ty_message.
     DATA dummy            TYPE string.
 
     DATA loggable         TYPE REF TO ltd_loggable_object.

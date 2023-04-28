@@ -16,7 +16,7 @@
   ],
   "rename": {
     "output": "output",
-    "patterns": [{"type": "CLAS|INTF", "oldName": "z(.*)_logger", "newName": "z$1_dt_logger"}]
+    "patterns": [{"type": "CLAS|INTF", "oldName": "z(cl|if|cx)_(.*)", "newName": "z$1_dt_$2"}]
   },
   "syntax": {
     "version": "v702",

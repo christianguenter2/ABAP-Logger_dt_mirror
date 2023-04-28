@@ -347,13 +347,13 @@ CLASS zcl_dt_logger IMPLEMENTATION.
           "see adt://***/sap/bc/adt/oo/classes/zcl_logger/source/main#start=391,10;end=415,61
           symsg                    TYPE symsg,
           syst_buffer              TYPE syst,
-          loggable                 TYPE REF TO zif_loggable_object,
-          loggable_object_messages TYPE zif_loggable_object=>tty_messages.
+          loggable                 TYPE REF TO zif_dt_loggable_object,
+          loggable_object_messages TYPE zif_dt_loggable_object=>tty_messages.
 
     FIELD-SYMBOLS: <table_of_messages>       TYPE ANY TABLE,
                    <message_line>            TYPE any,
                    <context_val>             TYPE any,
-                   <loggable_object_message> TYPE zif_loggable_object=>ty_message.
+                   <loggable_object_message> TYPE zif_dt_loggable_object=>ty_message.
 
     " Remember system message since it might get changed inadvertently
     syst_buffer = syst.

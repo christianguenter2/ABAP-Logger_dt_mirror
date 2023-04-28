@@ -1,4 +1,4 @@
-INTERFACE zif_loggable_object
+INTERFACE zif_dt_loggable_object
   PUBLIC.
   TYPES:
     BEGIN OF ty_symsg,
